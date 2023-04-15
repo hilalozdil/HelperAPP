@@ -44,7 +44,7 @@ class _HelperScreenState extends State<HelperScreen> {
       konum: 'Karaman',
       isFemale: true,
       imageUrl: 'assets/sultan.jpg',
-      backgroundColor: Color.fromRGBO(203, 213, 216, 1.0),
+      backgroundColor: Color.fromRGBO(238, 237, 237, 1),
       aciklama:
           'Merhaba ben Sultan Şen. 12 senedir profesyonel bir şekildde temizlik yapıyorum. Elim hızlı ve dikkatlidir. En keyif alarak yaptığım ve kendime güvendiğim iş banyo temizliği. Buzdolabı temizliği, mutfak dolapları temizği, iç dış cam temizliği gibi aklınıza gelebilecek her türlü temizliği yaparım.',
     ),
@@ -55,7 +55,7 @@ class _HelperScreenState extends State<HelperScreen> {
       konum: 'Konya',
       isFemale: false,
       imageUrl: 'assets/kadır.jpg',
-      backgroundColor: Color.fromRGBO(237, 214, 180, 1.0),
+      backgroundColor: Color.fromRGBO(238, 237, 237, 1),
       aciklama:
           'Merhaba ben Kadir Ezildi. 10 senedir temizlik hastalığım var. Fayans araları, kalorifer petekleri, muffak, banyo ve halıları yıkayıp detaylı temizleme gibi her şeyi yaparım. Temizlik hastalığım yüzünden evime misafir kabul etmiyorum. Sizin evinizi de kendi evim gibi temizleyeceğime güvenebilirsiniz. ',
     ),
@@ -66,7 +66,7 @@ class _HelperScreenState extends State<HelperScreen> {
       konum: 'İstanbul',
       isFemale: false,
       imageUrl: 'assets/deniz.jpg',
-      backgroundColor: Color.fromRGBO(180, 237, 191, 1.0),
+      backgroundColor: Color.fromRGBO(238, 237, 237, 1),
       aciklama:
           'Merhaba ben Deniz Şimşek. 5 senedir profesyonel bir şekildde temizlik yapıyorum. Sektörde yeni olduğuma aldanmayın. El çabukluğum vardır. Tüm ev temizliği dışında apartman ve garaj temizliği de yaparım. Mutfak ve banyo için gerekli temizlik malzemelerini yanımda getiririm.',
     ),
@@ -77,7 +77,7 @@ class _HelperScreenState extends State<HelperScreen> {
       konum: 'İstanbul',
       isFemale: true,
       imageUrl: 'assets/fatma.jpg',
-      backgroundColor: Color.fromRGBO(236, 195, 221, 1),
+      backgroundColor: Color.fromRGBO(238, 237, 237, 1),
       aciklama:
           'Merhaba ben Fatma Hatun. Annem bir konağın yardımcısıydı. Orada büyüdüm ve dolayısıyla 16 senedir profesyonel temizlik yapıyor olsam da çocukluğumdan beri temizlik işine aşinayım. Her türlü işi yapabilirim, şüpheniz olmasın. ',
     ),

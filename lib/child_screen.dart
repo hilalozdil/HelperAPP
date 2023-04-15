@@ -44,7 +44,7 @@ class _ChildScreenState extends State<ChildScreen> {
       konum: 'Karaman',
       isFemale: true,
       imageUrl: 'assets/ayşe.jpg',
-      backgroundColor: Color.fromRGBO(203, 213, 216, 1.0),
+      backgroundColor: Color.fromRGBO(238, 237, 237, 1),
       aciklama:
           'Merhaba ben Ayşe Yılmaz. 2 çocuğum var. Onları büyüttükten sonra bu işe başladım. 6 senedir bu işi yapıyorum. Çocuklarla çok iyi anlaşırım, onları kendi evlatlarımdan ayırmam. Gündüzleri çalışabilirim, yatılı çalışamam.',
     ),
@@ -55,7 +55,7 @@ class _ChildScreenState extends State<ChildScreen> {
       konum: 'Manisa',
       isFemale: true,
       imageUrl: 'assets/farima.jpg',
-      backgroundColor: Color.fromRGBO(237, 214, 180, 1.0),
+      backgroundColor: Color.fromRGBO(238, 237, 237, 1),
       aciklama:
           'Merhaba ben Farima Rose. Çocukları çok sevdiğim için bu mesleği seçtim. 4 senedir bu işi yapıyorum. Daha önce kreşte çalıştım. Yatılı bakıcı olarakta çalışabilirim.',
     ),
@@ -66,7 +66,7 @@ class _ChildScreenState extends State<ChildScreen> {
       konum: 'İstanbul',
       isFemale: true,
       imageUrl: 'assets/luda.jpg',
-      backgroundColor: Color.fromRGBO(180, 237, 191, 1.0),
+      backgroundColor: Color.fromRGBO(238, 237, 237, 1),
       aciklama:
           'Merhaba ben Luda Gomez. 11 senedir Türkiyede yaşıyorum. Buraya ilk geldiğim sene 3 sene lüks otellerde kids clupta çocuklara ablalık yaptım. Çocuklara bayılırım. Onlara bakarken aynı zamanda temel ingilizceyi öğretebilirim. Yatılı olarakta çalışabilirim.',
     ),
@@ -77,7 +77,7 @@ class _ChildScreenState extends State<ChildScreen> {
       konum: 'Sivas',
       isFemale: true,
       imageUrl: 'assets/mine.jpg',
-      backgroundColor: Color.fromRGBO(203, 213, 216, 1.0),
+      backgroundColor: Color.fromRGBO(238, 237, 237, 1),
       aciklama:
           'Merhaba ben Mine Çınar. 5 senedir bu işi yapıyorum. Daha önce kreşte çalıştım. Kendi kardeşlerimi ben büyüttüm. Benim onları sevdiğim gibi çocuklarında beni seveceklerine eminim. Benden memnun kalacağınıza eminim.',
     ),
