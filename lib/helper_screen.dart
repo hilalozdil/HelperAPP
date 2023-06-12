@@ -41,8 +41,8 @@ class _HelperScreenState extends State<HelperScreen> {
       name: 'Sultan',
       surname: 'Şen (12 sene)',
       age: 35.0,
-      konum: 'Karaman',
-      isFemale: true,
+      //konum: 'Karaman',
+      //isFemale: true,
       imageUrl: 'assets/sultan.jpg',
       backgroundColor: Color.fromRGBO(203, 213, 216, 1.0),
       aciklama:
