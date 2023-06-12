@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:helper_app/helper_screen.dart';
+import 'package:helper_app/login_page.dart';
 import 'package:helper_app/menu_screen.dart';
 import 'package:helper_app/child_detail_screen.dart';
 import 'package:helper_app/child_screen.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.brown,
       ),
-      home: HelperScreen(),
+      home: LoginPage(),
     );
   }
 }
