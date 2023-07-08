@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helper_app/add_record_page.dart';
 import 'package:helper_app/helper_screen.dart';
 import 'package:helper_app/login_page.dart';
 import 'package:helper_app/menu_screen.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.brown,
       ),
-      home: LoginPage(),
+      home: MenuScreen(),
     );
   }
 }
