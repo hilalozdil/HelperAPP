@@ -44,7 +44,7 @@ class _CookerScreenState extends State<CookerScreen> {
       konum: 'Bursa',
       isFemale: true,
       imageUrl: 'assets/chan.jpg',
-      backgroundColor: Color.fromRGBO(203, 213, 216, 1.0),
+      backgroundColor: Color.fromRGBO(218, 204, 175, 1),
       aciklama:
           'Merhaba ben Chan Bii. 3 senedir Türkiyede yaşıyorum. Burada lüks otellerde çalıştım. 7 senedir tecrübeli bir aşçıyım. Uzmanlık alanım Uzak Doğu mutfağıyla birlikte tüm dünya yemeklerine hakimim. El lezzetime güveniyorum. ',
     ),
@@ -55,7 +55,7 @@ class _CookerScreenState extends State<CookerScreen> {
       konum: 'İstanbul',
       isFemale: true,
       imageUrl: 'assets/gülfidan.jpg',
-      backgroundColor: Color.fromRGBO(237, 214, 180, 1.0),
+      backgroundColor: Color.fromRGBO(218, 204, 175, 1),
       aciklama:
           'Merhaba ben Sevda Kılıç. 7 senedir profesyonel bir aşçıyım. Daha önce okullarda ve bazı büyük şirketlerde aşçılık yaptım. Diyet menüleri de yapıyorum. Yemeklerimi tadanlar bu zamana kadar hep memnun kaldılar sizlerinde memnun kalacağınızdan eminim.',
     ),
@@ -66,7 +66,7 @@ class _CookerScreenState extends State<CookerScreen> {
       konum: 'Niğde',
       isFemale: false,
       imageUrl: 'assets/hakan.jpg',
-      backgroundColor: Color.fromRGBO(180, 237, 191, 1.0),
+      backgroundColor: Color.fromRGBO(218, 204, 175, 1),
       aciklama:
           'Merhaba ben Hasan Çoban. Çocukluğumda ocakbaşı restoranımız vardı dolayısıyla çok uzun zamandır bu işin içindeyim. Her türlü kebap, ızgara, ocakbaşı yemekleri benden sorulur.  ',
     ),
@@ -77,7 +77,7 @@ class _CookerScreenState extends State<CookerScreen> {
       konum: 'İzmir',
       isFemale: false,
       imageUrl: 'assets/lucas.jpg',
-      backgroundColor: Color.fromRGBO(203, 213, 216, 1.0),
+      backgroundColor: Color.fromRGBO(218, 204, 175, 1),
       aciklama:
           'Merhaba ben Luici Molito. İtalyan bir şefim. 4 senedir Türkiyede yaşıyorum. İtalyan restoranı uzmanlık alanım. Özellikle pizza ve makarnalarımı tadan bir kez daha tatmak istiyor. Türkiyede Türk yemeklerini de öğrendim. Yemeklerime bayılacağınıza eminim.',
     ),
@@ -99,7 +99,7 @@ class _CookerScreenState extends State<CookerScreen> {
 
   Widget buildPeopleIcon(index, sayfa) {
     return Padding(
-      padding: EdgeInsets.only(right: 20.0, left: 20.0),
+      padding: EdgeInsets.all(8.0),
       child: Column(
         children: <Widget>[
           InkWell(
@@ -250,16 +250,6 @@ class _CookerScreenState extends State<CookerScreen> {
                             ),
                           ),
                         ),
-                        /*Container(
-                          height: 105.0,
-                          child: ListView.builder(
-                            padding: EdgeInsets.only(left: 20.0),
-                            scrollDirection: Axis.horizontal,
-                            itemCount: peopleTypes.length,
-                            itemBuilder: (context, index) {
-                              return buildPeopleIcon(index);
-                            },),
-                        ),*/
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [

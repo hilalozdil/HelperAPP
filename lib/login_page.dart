@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helper_app/menu_screen.dart';
 import 'helper_screen.dart';
 
 class LoginPage extends StatefulWidget {
@@ -14,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor.withOpacity(0.06),
+      backgroundColor: Color.fromRGBO(190, 175, 143, 1),
       resizeToAvoidBottomInset: false,
       body: Form(
         key: _formKey,
@@ -33,7 +34,6 @@ class _LoginPageState extends State<LoginPage> {
                   border: OutlineInputBorder(),
                 ),
                 validator: (String? value) {
-                  //girilen değerin boş olup olmadığını anlamak. eklediğimiz her değer valueya atanır.
                   if (value!.isEmpty) {
                     return "Eposta Giriniz";
                   } else if (!value.contains('@')) {
@@ -97,7 +97,7 @@ class _LoginPageState extends State<LoginPage> {
               debugPrint("Giriş Başarilidir");
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => HelperScreen()),
+                MaterialPageRoute(builder: (context) => MenuScreen()),
               );
             } else {
               if (username != null && password != null) {

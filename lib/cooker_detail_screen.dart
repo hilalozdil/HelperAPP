@@ -76,7 +76,7 @@ class _CookerDetailScreenState extends State<CookerDetailScreen> {
                                 CircleAvatar(
                                   radius: 20.0,
                                   backgroundImage:
-                                      AssetImage('assets//profilephoto.jpg'),
+                                      AssetImage('assets/profilephoto.jpg'),
                                 ),
                               ],
                             ),
@@ -145,15 +145,24 @@ class _CookerDetailScreenState extends State<CookerDetailScreen> {
                           elevation: 4.0,
                           color: Theme.of(context).primaryColor,
                           child: Padding(
-                            padding: EdgeInsets.all(20.0),
-                            child: Text(
-                              'Kabul et',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18.0,
+                            padding: EdgeInsets.all(4.0),
+                            child: InkWell(
+                              borderRadius: BorderRadius.circular(20.0),
+                              onTap: () {
+                                print('Kabul edildi!');
+                              },
+                              child: Padding(
+                                padding: EdgeInsets.all(17.0),
+                                child: Text(
+                                  'Kabul et',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18.0,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
                               ),
-                              textAlign: TextAlign.center,
                             ),
                           ),
                         ),
@@ -166,10 +175,13 @@ class _CookerDetailScreenState extends State<CookerDetailScreen> {
                         elevation: 4.0,
                         color: Theme.of(context).primaryColor,
                         child: Padding(
-                          padding: EdgeInsets.all(20.0),
-                          child: Icon(
-                            FontAwesomeIcons.heart,
+                          padding: EdgeInsets.all(9.0),
+                          child: IconButton(
+                            icon: Icon(FontAwesomeIcons.heart),
                             color: Colors.white,
+                            onPressed: () {
+                              print("Butona 1 kez tıklandı");
+                            },
                           ),
                         ),
                       ),

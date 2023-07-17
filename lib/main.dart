@@ -10,13 +10,14 @@ import 'package:helper_app/cooker_screen.dart';
 import 'package:helper_app/helper_detail_screen.dart';
 import 'package:helper_app/nurse_detail_screen.dart';
 import 'package:helper_app/nurse_screen.dart';
+import 'package:helper_app/profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-Color mainColor = Color.fromRGBO(128, 68, 53, 1);
-Color startingColor = Color.fromRGBO(112, 56, 44, 1);
+Color mainColor = Color.fromRGBO(148, 123, 90, 1);
+Color startingColor = Color.fromRGBO(148, 123, 90, 1);
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.brown,
       ),
-      home: MenuScreen(),
+      home: HelperScreen(),
     );
   }
 }

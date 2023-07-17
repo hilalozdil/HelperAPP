@@ -44,7 +44,7 @@ class _NurseScreenState extends State<NurseScreen> {
       konum: 'Mersin',
       isFemale: true,
       imageUrl: 'assets/eva.jpg',
-      backgroundColor: Color.fromRGBO(203, 213, 216, 1.0),
+      backgroundColor: Color.fromRGBO(218, 204, 175, 1),
       aciklama:
           'Merhaba ben Eva Moon. Türkiyeye 11 sene önce geldim. 10 senedir bu işi yapıyorum. Kendi Ülkemde ebelik yapıyordum ve burada huzurevinde hasta bakıcı olarak çalışmaya başladım. Doğum öncesi ve sonrası anne ve bebek bakımındada yardımcı olabilirim.',
     ),
@@ -55,7 +55,7 @@ class _NurseScreenState extends State<NurseScreen> {
       konum: 'İstanbul',
       isFemale: false,
       imageUrl: 'assets/mehmet.jpg',
-      backgroundColor: Color.fromRGBO(237, 214, 180, 1.0),
+      backgroundColor: Color.fromRGBO(218, 204, 175, 1),
       aciklama:
           'Merhaba ben Mehmet Soykan. Asıl mesleğim fizyoterapist olmakla birlikte 10 senedir bu işi yapıyorum. Hasta bakıcı olarak, genellikle yaşlı hastalarımla çalışmış olsam da küçüklü büyüklü her yaş grubundan fizyoterapiste ihtiyacı olan hastalarım olmuştu.   ',
     ),
@@ -66,7 +66,7 @@ class _NurseScreenState extends State<NurseScreen> {
       konum: 'Kastamonu',
       isFemale: true,
       imageUrl: 'assets/sude.jpg',
-      backgroundColor: Color.fromRGBO(180, 237, 191, 1.0),
+      backgroundColor: Color.fromRGBO(218, 204, 175, 1),
       aciklama:
           'Merhaba ben Sude Çınar. Hemşireyim. 15 senedir bu işi yapıyorum. Damardan enjeksiyon, kan alma, pansuman ve yara bakımı, evde kronik hasta bakımı gibi hemşirelik gerektiren işleri yapabilirim. Yatılı hasta bakıcı olarakta görev alabilirim.',
     ),
@@ -77,7 +77,7 @@ class _NurseScreenState extends State<NurseScreen> {
       konum: 'Van',
       isFemale: true,
       imageUrl: 'assets/zeynep.jpg',
-      backgroundColor: Color.fromRGBO(203, 213, 216, 1.0),
+      backgroundColor: Color.fromRGBO(218, 204, 175, 1),
       aciklama:
           'Merhaba ben Zeynep Kavas. ATT mezunuyum. 12 senedir bu işi yapıyorum. Genel hasta bakımları dışında ilk yardım müdahalesinde de bulunabilirim. Bu işi severek ve dikkatlice yapıyorum. İster yatılı isterseniz de part time gündüz olacak şekilde çalışabilirim.',
     ),
@@ -99,7 +99,7 @@ class _NurseScreenState extends State<NurseScreen> {
 
   Widget buildPeopleIcon(index, sayfa) {
     return Padding(
-      padding: EdgeInsets.only(right: 20.0, left: 20.0),
+      padding: EdgeInsets.all(8.0),
       child: Column(
         children: <Widget>[
           InkWell(

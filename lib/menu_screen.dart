@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:helper_app/add_record_page.dart';
 import 'package:helper_app/helper_screen.dart';
+import 'package:helper_app/login_page.dart';
+import 'package:helper_app/profile_screen.dart';
 import 'main.dart';
 
 class MenuScreen extends StatefulWidget {
@@ -161,7 +163,7 @@ class _MenuScreenState extends State<MenuScreen> {
                   title: Row(
                     children: [
                       Icon(
-                        Icons.add,
+                        FontAwesomeIcons.heart,
                         color: Colors.white,
                       ),
                       SizedBox(
@@ -184,7 +186,7 @@ class _MenuScreenState extends State<MenuScreen> {
                   title: Row(
                     children: [
                       Icon(
-                        Icons.add,
+                        Icons.person,
                         color: Colors.white,
                       ),
                       SizedBox(
@@ -199,28 +201,32 @@ class _MenuScreenState extends State<MenuScreen> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => HelperScreen()),
+                      MaterialPageRoute(builder: (context) => ProfileScreen()),
                     );
                   },
                 ),
-                Row(
-                  children: <Widget>[
-                    Icon(
-                      FontAwesomeIcons.cog,
-                      color: Colors.white.withOpacity(0.5),
-                    ),
-                    SizedBox(
-                      width: 16.0,
-                    ),
-                    Text(
-                      'Ayarlar  |  Çıkış Yap',
-                      style: TextStyle(
-                        color: Colors.white.withOpacity(0.5),
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.w600,
+                ListTile(
+                  title: Row(
+                    children: [
+                      Icon(
+                        Icons.logout,
+                        color: Colors.white,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 20.0,
+                      ),
+                      Text(
+                        'Çıkış Yap',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ],
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LoginPage()),
+                    );
+                  },
                 ),
               ],
             ),

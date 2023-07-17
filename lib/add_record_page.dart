@@ -17,18 +17,18 @@ class _AddRecordPageState extends State<AddRecordPage> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.pop(
-                context); // Geri butonuna basıldığında önceki sayfaya dön
+            Navigator.pop(context);
           },
         ),
+        title: Text('KAYIT EKLEME'),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
           children: [
             Container(
-              width: 300.0,
-              height: 300.0,
+              width: 150.0,
+              height: 150.0,
               color: Colors.white70,
               child: Center(
                 child: Text(
@@ -52,9 +52,8 @@ class _AddRecordPageState extends State<AddRecordPage> {
             ),
             SizedBox(height: 16.0),
             Center(
-              child: TextFormField(
-                decoration: InputDecoration(labelText: 'Adı'),
-              ),
+              child:
+                  TextFormField(decoration: InputDecoration(labelText: 'Adı')),
             ),
             Center(
               child: TextFormField(
@@ -87,9 +86,7 @@ class _AddRecordPageState extends State<AddRecordPage> {
               child: Align(
                 alignment: Alignment.bottomCenter,
                 child: ElevatedButton(
-                  onPressed: () {
-                    // Kayıt ekleme işlemleri burada yapılır
-                  },
+                  onPressed: () {},
                   style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(Colors.brown)),
                   child: Text('Kayıt Ekle'),
