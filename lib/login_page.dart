@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:helper_app/menu_screen.dart';
 import 'helper_screen.dart';
+import 'auth.dart';
+import 'register.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -8,6 +10,11 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+
+  AuthService _authService = AuthService();
+
   String? username;
   String? password;
   final _formKey = GlobalKey<FormState>();
@@ -15,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(190, 175, 143, 1),
+      backgroundColor: Color.fromRGBO(190, 143, 143, 1),
       resizeToAvoidBottomInset: false,
       body: Form(
         key: _formKey,
@@ -71,7 +78,12 @@ class _LoginPageState extends State<LoginPage> {
                 children: <Widget>[
                   MaterialButton(
                     child: Text("Üye Ol"),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => RegisterPage()),
+                      );
+                    },
                   ),
                   MaterialButton(
                     child: Text("Şifremi Unuttum"),
