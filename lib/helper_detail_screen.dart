@@ -2,9 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:helper_app/helper_screen.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class HelperDetailScreen extends StatefulWidget {
-  HelperDetailScreen({this.image, this.text});
+  HelperDetailScreen({this.image, this.text, t});
   final image;
   final text;
   @override
@@ -12,6 +14,8 @@ class HelperDetailScreen extends StatefulWidget {
 }
 
 class _HelperDetailScreenState extends State<HelperDetailScreen> {
+  List<Map<String, dynamic>> favoritesList = [];
+
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;

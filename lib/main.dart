@@ -11,6 +11,7 @@ import 'package:helper_app/helper_detail_screen.dart';
 import 'package:helper_app/nurse_detail_screen.dart';
 import 'package:helper_app/nurse_screen.dart';
 import 'package:helper_app/profile_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() {
   runApp(const MyApp());
